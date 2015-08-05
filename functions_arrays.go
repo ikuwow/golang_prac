@@ -52,4 +52,28 @@ func main() {
     fmt.Println(len(s))
     fmt.Println(cap(s))
 
+    // sss: = make([]int, 3) // [0,0,0] slice
+    // sss: = []int{1, 3, 5} // [0,0,0] slice
+    // sss: =
+
+    // fmt.Println(sss)
+
+    // map (hash)
+
+    // m := make(map[string]int) // string => int
+    // m["degawa"] = 100
+    // m["ikuwow"] = 80
+
+    m := map[string]int{"degawa": 100, "ikuwow": 80}
+    fmt.Println(m)
+    fmt.Println(len(m))
+    delete(m,"degawa") // if nothing, no action
+    fmt.Println(m)
+
+    value, exists := m["degawa"]
+    fmt.Println(value,exists)
+    value2, exists2 := m["ikuwow"]
+    fmt.Println(value2,exists2)
+
 }
+
