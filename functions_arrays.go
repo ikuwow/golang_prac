@@ -31,4 +31,25 @@ func main() {
 
     fmt.Println(fff(3,5))
 
+    // Arrays
+
+    var a [5]int // a[0]-a[4]
+    a[2] = 4
+    a[4] = 3
+    fmt.Println(a, a[2])
+
+    b := [3]int{1,2,4}
+    fmt.Println(b, len(b))
+
+    // a is not pointer like c
+    // 値渡し
+
+    // slice: reference type
+    // 配列への参照
+
+    s := b[1:]
+    fmt.Println(s)
+    fmt.Println(len(s))
+    fmt.Println(cap(s))
+
 }
